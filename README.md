@@ -1,6 +1,6 @@
 # CS 348K Project
 
-**Project Title:** Real-Time Raytracing for 3D Gaussian Splats
+**Project Title:** Real-Time Ray-tracing Rendering for 3D Gaussian Splats
 
 **Team Members:** Alex Lin (alexlin0), Yvette Lin (yvelin), Meijin Li (meijin)
 
@@ -32,4 +32,4 @@ Nice to haves:
 
 **What are the biggest risks?** The biggest risk will be working on the tasks in parallel. The BVH data structure is closely tied with the forward-pass renderer, which has to use and traverse the BVH. Additionally, the backward-pass shader computes gradients from the calculations done in the forward-pass renderer. We can mitigate these risks by carefully deciding upon the interface of the BVH data structure, and making sure everyone is on the same page about what computation the forward-pass renderer is doing exactly. We will need to plan and talk before we implement.
 
-**What do you need help with?** RTX 4090 GPU!
+**What do you need help with?** Cloud RTX 4090 GPU!
