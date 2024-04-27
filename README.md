@@ -2,7 +2,7 @@
 
 **Project Title:** Piercing Rays Through Splats (TODO)
 
-**Team Members:** Alex Lin (alexlin0), Yvette Lin (TODO), Meijin Li (TODO)
+**Team Members:** Alex Lin (alexlin0), Yvette Lin (yvelin), Meijin Li (TODO)
 
 **Summary:**
 
@@ -23,9 +23,20 @@ Nice to haves:
 1. Implement the forward-pass renderer in Slang and get gradients automatically differentiated
 2. Implement hardware accelerated ray-tracing for RTX GPUs
 
-**Expected deliverables:**
+**Expected deliverables:** Our main deliverable is a raytracer for scenes
+represented with Gaussian splats, which we will demonstrate can be used to train
+scenes end-to-end for novel view synthesis (by slotting in the raytracer to
+replace existing rasterization pipelines used in rendering). Qualitatively, we will
+demonstrate our results by showing real-time rendering on a collection of
+scenes reconstructed from sets of 2D images (from existing datasets and possibly from
+additional datasets we collect ourselves).
 
-**Evaluation:**
+**Evaluation:** We expect our method to have comparable quality to the baseline
+rasterization method, which we will validate by reporting the traditional
+quantitative image quality metrics (PSNR, SSIM, LPIPS) on a set of 3D scenes.
+We also expect our method to exhibit faster rendering and training than the baseline
+rasterization method on certain types of scenes and views, namely scenes with a
+high Gaussian splat count with views rendered at a low resolution. We will validate the expected speedup by reporting training and rendering times for our method compared to the baseline on the same hardware.
 
 **What are the biggest risks?** The biggest risk will be working on the tasks in parallel. The BVH data structure is closely tied with the forward-pass renderer, which has to use and traverse the BVH. Additionally, the backward-pass shader computes gradients from the calculations done in the forward-pass renderer. We can mitigate these risks by carefully deciding upon the interface of the BVH data structure, and making sure everyone is on the same page about what computation the forward-pass renderer is doing exactly. We will need to plan and talk before we implement.
 
