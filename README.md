@@ -21,6 +21,7 @@
 Nice to haves:
 
 1. Implement the forward-pass renderer in Slang and get gradients automatically differentiated
+2. Implement hardware accelerated ray-tracing for RTX GPUs
 
 **Expected deliverables:**
 
