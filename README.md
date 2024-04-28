@@ -4,7 +4,7 @@
 
 **Team Members:** Alex Lin (alexlin0), Yvette Lin (yvelin), Meijin Li (meijin)
 
-**Summary: **We aim to develop a high-performance raytracer for real-time rendering of scenes represented with 3D Gaussian splats on an Nvidia RTX A6000 GPU. To create end-to-end training process, from video input through scene reconstruction to novel view synthesis, we are going to start with existing 3D gaussian splatting scene representations, modify the forward-pass renderer in [the surface splatting paper](https://www.cs.umd.edu/~zwicker/publications/SurfaceSplatting-SIG01.pdf) to account for overlapping 3D gaussians, and integrate with nerfstudio's Splatfacto codebase. The system's efficacy will be validated by comparing its rendering quality and speed against traditional rasterization methods.
+**Summary:** We aim to develop a high-performance raytracer for real-time rendering of scenes represented with 3D Gaussian splats on an Nvidia RTX A6000 GPU. To create end-to-end training process, from video input through scene reconstruction to novel view synthesis, we are going to start with existing 3D gaussian splatting scene representations, modify the forward-pass renderer in [the surface splatting paper](https://www.cs.umd.edu/~zwicker/publications/SurfaceSplatting-SIG01.pdf) to account for overlapping 3D gaussians, and integrate with nerfstudio's Splatfacto codebase. The system's efficacy will be validated by comparing its rendering quality and speed against traditional rasterization methods.
 
 **Inputs and outputs:** We list the inputs, outputs and constraints for the renderer and scene representation training separately. 
 
