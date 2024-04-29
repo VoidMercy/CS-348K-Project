@@ -1,0 +1,3 @@
+[submodule "gaussian-splatting"]
+	path = gaussian-splatting
+	url = git@github.com:VoidMercy/gaussian-splatting.git
