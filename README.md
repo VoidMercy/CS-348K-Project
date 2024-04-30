@@ -27,10 +27,11 @@ Nice to haves:
 2. Implement hardware accelerated ray-tracing for RTX GPUs
 
 Task split:
-BVH construction and ray-BVH intersections in forward-pass renderer - Alex
-Alpha composing and computing pixel color given 3D gaussian intersection in forward-pass renderer (by 2D splatting and integrating overlapping 3D gaussians) - Meijin
-Backward-pass to compute gradients - Yvette (Meijin to help)
-Integrating the above components into an end-to-end training pipeline - Alex (Yvette to help)
+
+1. BVH construction and ray-BVH intersections in forward-pass renderer - Alex
+1. Alpha composing and computing pixel color given 3D gaussian intersection in forward-pass renderer (by 2D splatting and integrating overlapping 3D gaussians) - Meijin
+1. Backward-pass to compute gradients - Yvette (Meijin to help)
+1. Integrating the above components into an end-to-end training pipeline - Alex (Yvette to help)
 
 **Expected deliverables:** Our main deliverable is a raytracer for scenes represented with Gaussian splats, which we will demonstrate can be used to train scenes end-to-end for novel view synthesis (by slotting in the raytracer to replace existing rasterization pipelines used in rendering). Qualitatively, we will demonstrate our results by showing real-time rendering on a collection of scenes reconstructed from sets of 2D images (from existing datasets and possibly from additional datasets we collect ourselves).
 
